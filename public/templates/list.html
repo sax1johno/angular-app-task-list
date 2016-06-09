@@ -1,0 +1,8 @@
+<div>
+    <label for="newTask">New Task: </label>
+    <input type="text" ng-model="task" />
+    <button ng-click="addTask()">Add Task</button>
+</div>
+<ul>
+    <li ng-repeat="item in taskList track by $index">{{item}}</li>
+</ul>
